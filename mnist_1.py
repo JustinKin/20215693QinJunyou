@@ -387,6 +387,8 @@ class Trainer:
         self.epochs = epochs
         self.batch_size = mini_batch_size
         self.evaluate_sample_num_per_epoch = evaluate_sample_num_per_epoch
+        self.train_loss = []
+        self.test_loss = []
 
         # optimzer
         optimizer_class_dict = {'sgd':SGD}
@@ -427,7 +429,9 @@ class Trainer:
             train_acc = self.network.accuracy(x_train_sample, t_train_sample)
             test_acc = self.network.accuracy(x_test_sample, t_test_sample)
             self.train_acc_list.append(train_acc)
+            self.train_loss.append(1-train_acc)
             self.test_acc_list.append(test_acc)
+            self.test_loss.append(1-test_acc)
 
             if self.verbose: print("=== epoch:" + str(self.current_epoch) + ", train acc:" + str(train_acc) + ", test acc:" + str(test_acc) + " ===")
         self.current_iter += 1
