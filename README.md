@@ -18,7 +18,7 @@
 
     3.实现基于BP，SGD的训练(✔)
 
-    4.对比sigmoid和relu激活函数的区别()
+    4.对比sigmoid和relu激活函数的区别(✔)
 
     5.Softmax输出类别，交叉熵损失函数(✔)
 
