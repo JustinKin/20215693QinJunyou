@@ -1,4 +1,4 @@
-.mnst/
+.mnist/
 .vscode/
 dataset/
 *.pkl
