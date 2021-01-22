@@ -38,6 +38,6 @@
 
 -------------------
 
-    1.在第一次作业的基础上，将SGD梯度下降算法替换为nesterov momentum RMSProp算法()
+    1.在第一次作业的基础上，将SGD梯度下降算法替换为nesterov momentum RMSProp算法(✔)
 
-    2.加入BN算法()
+    2.加入BN算法(✔)
